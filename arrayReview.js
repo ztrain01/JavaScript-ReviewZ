@@ -13,7 +13,15 @@ var last = function(){
 
 
 //Loop through evenArray removing all values that aren't even 
+var evenArray = [1,2,3,6,22,98,45,23,22,12];
 
+var odds = function() {
+	for (var i = 0; i < evenArray.length; i++)
+		if ( evenArray[i] % 2 !== 0 ){
+			evenArray.splice(i,1);
+			i--;
+		} return evenArray;
+}
 
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 

@@ -33,7 +33,18 @@ var getRandomArbitrary = function() {
 }
 var randomArray = [0,3,4,5,6,7,9,14,17,24,25,26,29,30];
 
-  //code here
+var randomMatch = function(){
+	var x = getRandomArbitrary();
+	console.log(x);
+		for (var i = 0; i < randomArray.length; i++){
+			if(x === randomArray[i]){
+				return true;
+			}	else {
+				return false;
+			}
+			}
+	}
+
 
 
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */

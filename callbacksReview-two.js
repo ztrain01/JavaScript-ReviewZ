@@ -37,9 +37,12 @@ var songs =
 //Above you have a large Array of Song Objects. 
 //Write a 'getter' function that returns the songs array.
 
-  //code here
+ var setter = function(newSong, cb) {
+    song.push(newSong);
+    return cb();
+ }
 
-
+setter({artist})
 //Now write a setter that takes in two paramaters.
 //The first parameter is a song object and the second parameter is a callback (which will be a placeholder for your getter function)
 //Inside your setter function first add the first parameter, or the song object, to the end of your songs array.
